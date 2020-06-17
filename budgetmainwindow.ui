@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BudgetMainWindow</class>
+ <widget class="QMainWindow" name="BudgetMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BudgetMainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_vnosObveznosti">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Vnos obveznosti</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_statistika">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Statistika</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_obveznostiInTerjatve">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Obveznosti in terjatve</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_izhod">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Izhod</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMeni">
+    <property name="title">
+     <string>Meni</string>
+    </property>
+    <addaction name="actionVnost_obveznosti"/>
+    <addaction name="actionObveznosti_in_terjatve"/>
+    <addaction name="actionStatistika"/>
+    <addaction name="separator"/>
+    <addaction name="actionIzhod"/>
+   </widget>
+   <widget class="QMenu" name="menuO_programu">
+    <property name="title">
+     <string>O programu</string>
+    </property>
+    <addaction name="actionO_programu"/>
+   </widget>
+   <addaction name="menuMeni"/>
+   <addaction name="menuO_programu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionVnost_obveznosti">
+   <property name="text">
+    <string>Vnost obveznosti...</string>
+   </property>
+  </action>
+  <action name="actionObveznosti_in_terjatve">
+   <property name="text">
+    <string>Obveznosti in terjatve...</string>
+   </property>
+  </action>
+  <action name="actionStatistika">
+   <property name="text">
+    <string>Statistika...</string>
+   </property>
+  </action>
+  <action name="actionIzhod">
+   <property name="text">
+    <string>Izhod</string>
+   </property>
+  </action>
+  <action name="actionO_programu">
+   <property name="text">
+    <string>O programu...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

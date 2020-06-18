@@ -54,7 +54,7 @@
      <string>Statistika</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_obveznostiInTerjatve">
+   <widget class="QPushButton" name="pushButton_proracun">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -71,7 +71,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Obveznosti in terjatve</string>
+     <string>Proračun</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_izhod">
@@ -101,50 +101,50 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMeni">
     <property name="title">
      <string>Meni</string>
     </property>
-    <addaction name="actionVnost_obveznosti"/>
-    <addaction name="actionObveznosti_in_terjatve"/>
-    <addaction name="actionStatistika"/>
+    <addaction name="action_vnosObveznosti"/>
+    <addaction name="action_proracun"/>
+    <addaction name="action_statistika"/>
     <addaction name="separator"/>
-    <addaction name="actionIzhod"/>
+    <addaction name="action_Izhod"/>
    </widget>
    <widget class="QMenu" name="menuO_programu">
     <property name="title">
      <string>O programu</string>
     </property>
-    <addaction name="actionO_programu"/>
+    <addaction name="action_oPprogramu"/>
    </widget>
    <addaction name="menuMeni"/>
    <addaction name="menuO_programu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionVnost_obveznosti">
+  <action name="action_vnosObveznosti">
    <property name="text">
     <string>Vnost obveznosti...</string>
    </property>
   </action>
-  <action name="actionObveznosti_in_terjatve">
+  <action name="action_proracun">
    <property name="text">
-    <string>Obveznosti in terjatve...</string>
+    <string>Proračun...</string>
    </property>
   </action>
-  <action name="actionStatistika">
+  <action name="action_statistika">
    <property name="text">
     <string>Statistika...</string>
    </property>
   </action>
-  <action name="actionIzhod">
+  <action name="action_Izhod">
    <property name="text">
     <string>Izhod</string>
    </property>
   </action>
-  <action name="actionO_programu">
+  <action name="action_oPprogramu">
    <property name="text">
     <string>O programu...</string>
    </property>

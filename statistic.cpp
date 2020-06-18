@@ -1,11 +1,12 @@
 #include "statistic.h"
 
-Statistic::Statistic()
+Statistic::Statistic() :
+    ui(new Ui::Statistic)
 {
 
 }
 
 Statistic::~Statistic()
 {
-
+    delete ui;
 }

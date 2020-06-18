@@ -1,6 +1,4 @@
-QT       += core gui
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += core gui widgets
 
 CONFIG += c++11
 
@@ -19,20 +17,27 @@ SOURCES += \
     controller.cpp \
     main.cpp \
     budgetmainwindow.cpp \
+    proracun.cpp \
     statistic.cpp \
     vnosobveznosti.cpp
 
 HEADERS += \
     budgetmainwindow.h \
     controller.h \
+    proracun.h \
     statistic.h \
     vnosobveznosti.h
 
 FORMS += \
     budgetmainwindow.ui \
+    proracun.ui \
+    statistic.ui \
     vnosobveznosti.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resource.qrc

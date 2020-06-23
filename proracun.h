@@ -10,11 +10,18 @@ QT_END_NAMESPACE
 class Proracun : public QDialog
 {
 public:
-    Proracun();
-    virtual ~Proracun();
+    explicit Proracun(const QList<QTreeWidgetItem*>& treeItms);
+    ~Proracun();
+    QTreeWidgetItem& GetCurrentTreeItem();
+
+private slots:
+    QTreeWidgetItem& on_treeWidget_itemSelectionChanged();
 
 private:
-    Ui::Proracun* ui;
+    void InsertIntoTree(const QList<QTreeWidgetItem*>& treeItms);
+
+private:
+    Ui::Proracun ui;
 };
 
 #endif // PRORACUN_H

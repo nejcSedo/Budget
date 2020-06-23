@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/icons">
         <file>budget.ico</file>
+        <file>O programu.ico</file>
+        <file>Proracun.ico</file>
+        <file>Statistika.ico</file>
+        <file>Vnos obveznosti.ico</file>
     </qresource>
 </RCC>

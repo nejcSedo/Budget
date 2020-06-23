@@ -6,102 +6,105 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>200</width>
+    <height>300</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>200</width>
+    <height>300</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>BudgetMainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_vnosObveznosti">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>231</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Vnos obveznosti</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_statistika">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>120</y>
-      <width>231</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Statistika</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_proracun">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>70</y>
-      <width>231</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Proračun</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_izhod">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>500</y>
-      <width>231</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Izhod</string>
-    </property>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_vnosObveznosti">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Vnos obveznosti</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_statistika">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Statistika</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_proracun">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Proračun</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="pushButton_izhod">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Izhod</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>21</height>
+     <width>200</width>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMeni">
@@ -118,23 +121,35 @@
     <property name="title">
      <string>O programu</string>
     </property>
-    <addaction name="action_oPprogramu"/>
+    <addaction name="action_Oprogramu"/>
    </widget>
    <addaction name="menuMeni"/>
    <addaction name="menuO_programu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action_vnosObveznosti">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Vnos obveznosti.ico</normaloff>:/icons/Vnos obveznosti.ico</iconset>
+   </property>
    <property name="text">
     <string>Vnost obveznosti...</string>
    </property>
   </action>
   <action name="action_proracun">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Proracun.ico</normaloff>:/icons/Proracun.ico</iconset>
+   </property>
    <property name="text">
     <string>Proračun...</string>
    </property>
   </action>
   <action name="action_statistika">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Statistika.ico</normaloff>:/icons/Statistika.ico</iconset>
+   </property>
    <property name="text">
     <string>Statistika...</string>
    </property>
@@ -144,12 +159,18 @@
     <string>Izhod</string>
    </property>
   </action>
-  <action name="action_oPprogramu">
+  <action name="action_Oprogramu">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/O programu.ico</normaloff>:/icons/O programu.ico</iconset>
+   </property>
    <property name="text">
     <string>O programu...</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

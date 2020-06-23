@@ -11,10 +11,10 @@ class Statistic : public QDialog
 {
 public:
     Statistic();
-    virtual ~Statistic();
+    ~Statistic();
 
 private:
-    Ui::Statistic* ui;
+    Ui::Statistic ui;
 };
 
 #endif // STATISTIC_H
